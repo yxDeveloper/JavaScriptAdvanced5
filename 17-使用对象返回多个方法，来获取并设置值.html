@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function foo() {
+			var name = "夜神";
+			var gender = "一叶知秋";
+			return {
+				setName: function (a) {
+					name = a;
+					return name;
+				},
+				getName: function () {
+					return name;
+				},
+				setGender: function (a) {
+					name = a;
+					// return name;
+				},
+				getGender: function () {
+					return name;
+				}		
+			};
+		}
+		var obj = foo();
+		console.log(obj.setName("lala"));
+		obj.setGender("baba")
+		// console.log(obj.setGender("baba"));
+		console.log(obj.getGender());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
